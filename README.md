@@ -1,10 +1,12 @@
-# bindings py
+# bindings-py [![Build Status](https://travis-ci.org/domdere/bindings-py.png?branch=master)](https://travis-ci.org/domdere/bindings-py)
 
 Low Level Bindings for the Python C API
 
+(Still in development)
+
 ## Building the project
 
-The project must be "configured" at least once everytime `bindingsPy.cabal` changes, this can be done with:
+The project must be "configured" at least once everytime `bindings-py.cabal` changes, this can be done with:
 
     cabal configure
 
