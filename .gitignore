@@ -12,9 +12,10 @@
 
 # potential build files:
 data/
+cabal-dev/
+.cabal-sandbox/
+*.buildinfo
+cabal.sandbox.config
 
 #cabal build directory:
 dist/
-cabal-dev/
-sandbox/
-*.buildinfo

@@ -1,5 +1,7 @@
 module Main where
 
+import Bindings.Python.Raw.Python
+
 import System.Console.GetOpt
 import System.Environment
 
@@ -51,4 +53,5 @@ main = do
 appMain :: [a] -> [String] -> IO ()
 appMain opts args = do
     putStrLn "Command Line Args: "
+    c'Py_Initialize
     mapM_ putStrLn args
