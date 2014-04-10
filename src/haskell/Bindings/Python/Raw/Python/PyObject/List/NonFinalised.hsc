@@ -4,7 +4,7 @@
 
 -----------------------------------------------------------------
 -- |
--- Module       : Bindings.Python.Raw.Python.Lists.NonFinalised
+-- Module       : Bindings.Python.Raw.Python.PyObject.List.NonFinalised
 -- Copyright    : (C) 2014 Dom De Re
 -- License      : BSD-style (see the file etc/LICENSE.md)
 -- Maintainer   : Dom De Re
@@ -14,7 +14,7 @@
 -- Refer to this: <https://docs.python.org/2/c-api/list.html>
 --
 -----------------------------------------------------------------
-module Bindings.Python.Raw.Python.Lists.NonFinalised
+module Bindings.Python.Raw.Python.PyObject.List.NonFinalised
     (   c'PyList_Check
     ,   p'PyList_Check
     ,   c'PyList_CheckExact

@@ -1,23 +1,16 @@
 -----------------------------------------------------------------
 -- |
--- Module       : Bindings.Python.Raw.Python
+-- Module       : Bindings.Python.Raw.Python.PyObject
 -- Copyright    : (C) 2014 Dom De Re
 -- License      : BSD-style (see the file etc/LICENSE.md)
 -- Maintainer   : Dom De Re
 --
+-- PyObject related types and functions.
+--
 -----------------------------------------------------------------
-module Bindings.Python.Raw.Python (
-    -- * Initialisation
-        c'Py_Initialize
-    ,   p'Py_Initialize
-    -- * Reference Counting
-    ,   c'Py_XINCREF
-    ,   p'Py_XINCREF
-    ,   c'Py_XDECREF
-    ,   p'Py_XDECREF
-    -- * PyObject Functions
-    -- ** List Functions
-    ,   c'PyList_Check
+module Bindings.Python.Raw.Python.PyObject (
+    -- * List Functions
+        c'PyList_Check
     ,   p'PyList_Check
     ,   c'PyList_CheckExact
     ,   p'PyList_CheckExact
@@ -45,8 +38,4 @@ module Bindings.Python.Raw.Python (
     ,   p'PyList_AsTuple
     ) where
 
-import Bindings.Python.Raw.Python.Initialize
-import Bindings.Python.Raw.Python.PyObject
-import Bindings.Python.Raw.Python.ReferenceCounting
-import Bindings.Python.Raw.Python.Types
-
+import Bindings.Python.Raw.Python.PyObject.List

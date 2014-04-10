@@ -8,7 +8,7 @@ copyright:          Copyright (C) 2010-2013
 synopsis:           Low Level Bindings for the Python C API
 category:           Foreign
 description:        Low Level Bindings for the Python C API
-homepage:           https://github.com/domdere/bindings-py/issues
+homepage:           https://github.com/domdere/bindings-py
 bug-reports:        https://github.com/domdere/bindings-py/issues
 cabal-version:      >= 1.10
 build-type:         Custom
@@ -44,8 +44,10 @@ library
     exposed-modules:    Bindings.Python.Raw.Python
 
     other-modules:      Bindings.Python.Raw.Python.Initialize
-                    ,   Bindings.Python.Raw.Python.Lists
-                    ,   Bindings.Python.Raw.Python.Lists.NonFinalised
+                    ,   Bindings.Python.Raw.Python.PyObject
+                    ,   Bindings.Python.Raw.Python.PyObject.List
+                    ,   Bindings.Python.Raw.Python.PyObject.List.NonFinalised
+                    ,   Bindings.Python.Raw.Python.PyObject.Tuple.NonFinalised
                     ,   Bindings.Python.Raw.Python.ReferenceCounting
                     ,   Bindings.Python.Raw.Python.Types
 

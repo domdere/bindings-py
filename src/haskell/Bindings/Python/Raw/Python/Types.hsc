@@ -14,7 +14,7 @@
 --
 -----------------------------------------------------------------
 module Bindings.Python.Raw.Python.Types
-    (   C'PyObject
+    (   C'PyObject(..)
     ,   C'Py_ssize_t
     ,   C'int
     ) where
