@@ -42,10 +42,13 @@ library
 
     exposed-modules:    Bindings.Python.Raw
 
-    other-modules:      Bindings.Python.Raw.Initialize
+    other-modules:      Bindings.Python.Raw.Buffer.NonFinalised
+                    ,   Bindings.Python.Raw.Buffer.Types
+                    ,   Bindings.Python.Raw.Initialize
                     ,   Bindings.Python.Raw.PyObject
                     ,   Bindings.Python.Raw.PyObject.List
                     ,   Bindings.Python.Raw.PyObject.List.NonFinalised
+                    ,   Bindings.Python.Raw.PyObject.Tuple
                     ,   Bindings.Python.Raw.PyObject.Tuple.NonFinalised
                     ,   Bindings.Python.Raw.ReferenceCounting
                     ,   Bindings.Python.Raw.Types
