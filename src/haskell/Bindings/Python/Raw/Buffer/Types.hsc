@@ -25,5 +25,4 @@ import Bindings.Python.Raw.Types
 #field len, <Py_ssize_t>
 #field readonly, <int>
 #field format, Ptr CChar
-
 #stoptype
