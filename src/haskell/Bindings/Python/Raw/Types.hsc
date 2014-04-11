@@ -13,7 +13,7 @@
 -- Haskell verisons of the C types.
 --
 -----------------------------------------------------------------
-module Bindings.Python.Raw.Python.Types
+module Bindings.Python.Raw.Types
     (   C'PyObject(..)
     ,   C'Py_ssize_t
     ,   C'int

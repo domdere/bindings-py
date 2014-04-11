@@ -1,6 +1,6 @@
 -----------------------------------------------------------------
 -- |
--- Module       : Bindings.Python.Raw.Python.PyObject.List
+-- Module       : Bindings.Python.Raw.PyObject.List
 -- Copyright    : (C) 2014 Dom De Re
 -- License      : BSD-style (see the file etc/LICENSE.md)
 -- Maintainer   : Dom De Re
@@ -10,7 +10,7 @@
 -- Refer to this: <https://docs.python.org/2/c-api/list.html>
 --
 -----------------------------------------------------------------
-module Bindings.Python.Raw.Python.PyObject.List
+module Bindings.Python.Raw.PyObject.List
     (   c'PyList_Check
     ,   p'PyList_Check
     ,   c'PyList_CheckExact
@@ -40,4 +40,4 @@ module Bindings.Python.Raw.Python.PyObject.List
 
     ) where
 
-import Bindings.Python.Raw.Python.PyObject.List.NonFinalised
+import Bindings.Python.Raw.PyObject.List.NonFinalised

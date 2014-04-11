@@ -27,7 +27,6 @@ library
 
     build-depends:          base < 5 && >= 4
                         ,   bindings-DSL
-                        ,   HUnit
                         ,   containers
                         ,   array
 
@@ -41,15 +40,15 @@ library
 
     include-dirs:       src/c/include
 
-    exposed-modules:    Bindings.Python.Raw.Python
+    exposed-modules:    Bindings.Python.Raw
 
-    other-modules:      Bindings.Python.Raw.Python.Initialize
-                    ,   Bindings.Python.Raw.Python.PyObject
-                    ,   Bindings.Python.Raw.Python.PyObject.List
-                    ,   Bindings.Python.Raw.Python.PyObject.List.NonFinalised
-                    ,   Bindings.Python.Raw.Python.PyObject.Tuple.NonFinalised
-                    ,   Bindings.Python.Raw.Python.ReferenceCounting
-                    ,   Bindings.Python.Raw.Python.Types
+    other-modules:      Bindings.Python.Raw.Initialize
+                    ,   Bindings.Python.Raw.PyObject
+                    ,   Bindings.Python.Raw.PyObject.List
+                    ,   Bindings.Python.Raw.PyObject.List.NonFinalised
+                    ,   Bindings.Python.Raw.PyObject.Tuple.NonFinalised
+                    ,   Bindings.Python.Raw.ReferenceCounting
+                    ,   Bindings.Python.Raw.Types
 
     c-sources:          src/c/bindings.c
 

@@ -1,12 +1,12 @@
 -----------------------------------------------------------------
 -- |
--- Module       : Bindings.Python.Raw.Python
+-- Module       : Bindings.Python.Raw
 -- Copyright    : (C) 2014 Dom De Re
 -- License      : BSD-style (see the file etc/LICENSE.md)
 -- Maintainer   : Dom De Re
 --
 -----------------------------------------------------------------
-module Bindings.Python.Raw.Python (
+module Bindings.Python.Raw (
     -- * Initialisation
         c'Py_Initialize
     ,   p'Py_Initialize
@@ -45,8 +45,8 @@ module Bindings.Python.Raw.Python (
     ,   p'PyList_AsTuple
     ) where
 
-import Bindings.Python.Raw.Python.Initialize
-import Bindings.Python.Raw.Python.PyObject
-import Bindings.Python.Raw.Python.ReferenceCounting
-import Bindings.Python.Raw.Python.Types
+import Bindings.Python.Raw.Initialize
+import Bindings.Python.Raw.PyObject
+import Bindings.Python.Raw.ReferenceCounting
+import Bindings.Python.Raw.Types
 

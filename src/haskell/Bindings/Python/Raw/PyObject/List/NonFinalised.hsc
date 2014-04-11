@@ -4,7 +4,7 @@
 
 -----------------------------------------------------------------
 -- |
--- Module       : Bindings.Python.Raw.Python.PyObject.List.NonFinalised
+-- Module       : Bindings.Python.Raw.PyObject.List.NonFinalised
 -- Copyright    : (C) 2014 Dom De Re
 -- License      : BSD-style (see the file etc/LICENSE.md)
 -- Maintainer   : Dom De Re
@@ -14,7 +14,7 @@
 -- Refer to this: <https://docs.python.org/2/c-api/list.html>
 --
 -----------------------------------------------------------------
-module Bindings.Python.Raw.Python.PyObject.List.NonFinalised
+module Bindings.Python.Raw.PyObject.List.NonFinalised
     (   c'PyList_Check
     ,   p'PyList_Check
     ,   c'PyList_CheckExact
@@ -43,7 +43,7 @@ module Bindings.Python.Raw.Python.PyObject.List.NonFinalised
     ,   p'PyList_AsTuple
     ) where
 
-import Bindings.Python.Raw.Python.Types
+import Bindings.Python.Raw.Types
 
 #strict_import
 import Data.Bits

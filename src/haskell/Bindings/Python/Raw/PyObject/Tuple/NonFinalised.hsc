@@ -4,7 +4,7 @@
 
 -----------------------------------------------------------------
 -- |
--- Module       : Bindings.Python.Raw.Python.PyObject.Tuple.NonFinalised
+-- Module       : Bindings.Python.Raw.PyObject.Tuple.NonFinalised
 -- Copyright    : (C) 2014 Dom De Re
 -- License      : BSD-style (see the file etc/LICENSE.md)
 -- Maintainer   : Dom De Re
@@ -14,7 +14,7 @@
 -- Refer to this: <https://docs.python.org/2/c-api/tuple.html>
 --
 -----------------------------------------------------------------
-module Bindings.Python.Raw.Python.PyObject.Tuple.NonFinalised (
+module Bindings.Python.Raw.PyObject.Tuple.NonFinalised (
         c'PyTuple_Check
     ,   p'PyTuple_Check
     ,   c'PyTuple_CheckExact
@@ -43,7 +43,7 @@ module Bindings.Python.Raw.Python.PyObject.Tuple.NonFinalised (
     ,   p'PyTuple_ClearFreeList
     ) where
 
-import Bindings.Python.Raw.Python.Types
+import Bindings.Python.Raw.Types
 
 #strict_import
 

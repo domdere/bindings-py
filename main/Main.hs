@@ -1,6 +1,6 @@
 module Main where
 
-import Bindings.Python.Raw.Python
+import Bindings.Python.Raw
 
 import System.Console.GetOpt
 import System.Environment
@@ -8,7 +8,7 @@ import System.Environment
 data CommandLineOption = Help | Version deriving (Show, Eq)
 
 coreOptions :: [OptDescr CommandLineOption]
-coreOptions = 
+coreOptions =
     [   Option "h?" ["help"]    (NoArg Help)    "print this usage message"
     ,   Option "V"  ["version"] (NoArg Version) "output the version"
     ]

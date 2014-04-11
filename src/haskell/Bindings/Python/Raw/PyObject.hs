@@ -1,6 +1,6 @@
 -----------------------------------------------------------------
 -- |
--- Module       : Bindings.Python.Raw.Python.PyObject
+-- Module       : Bindings.Python.Raw.PyObject
 -- Copyright    : (C) 2014 Dom De Re
 -- License      : BSD-style (see the file etc/LICENSE.md)
 -- Maintainer   : Dom De Re
@@ -8,7 +8,7 @@
 -- PyObject related types and functions.
 --
 -----------------------------------------------------------------
-module Bindings.Python.Raw.Python.PyObject (
+module Bindings.Python.Raw.PyObject (
     -- * List Functions
         c'PyList_Check
     ,   p'PyList_Check
@@ -38,4 +38,4 @@ module Bindings.Python.Raw.Python.PyObject (
     ,   p'PyList_AsTuple
     ) where
 
-import Bindings.Python.Raw.Python.PyObject.List
+import Bindings.Python.Raw.PyObject.List

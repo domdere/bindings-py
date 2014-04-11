@@ -5,18 +5,18 @@
 
 -----------------------------------------------------------------
 -- |
--- Module       : Bindings.Python.Raw.Python.Initialize
+-- Module       : Bindings.Python.Raw.Initialize
 -- Copyright    : (C) 2014 Dom De Re
 -- License      : BSD-style (see the file etc/LICENSE.md)
 -- Maintainer   : Dom De Re
 --
 -----------------------------------------------------------------
-module Bindings.Python.Raw.Python.Initialize
+module Bindings.Python.Raw.Initialize
     (   c'Py_Initialize
     ,   p'Py_Initialize
     ) where
 
-import Bindings.Python.Raw.Python.Types
+import Bindings.Python.Raw.Types
 
 #strict_import
 
