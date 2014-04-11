@@ -35,6 +35,12 @@ module Bindings.Python.Raw.Python.PyObject.Tuple.NonFinalised (
     ,   p'PyTuple_GetSlice
     ,   c'PyTuple_SetItem
     ,   p'PyTuple_SetItem
+    ,   c'PyTuple_SET_ITEM
+    ,   p'PyTuple_SET_ITEM
+    ,   c'PyTuple_Resize
+    ,   p'PyTuple_Resize
+    ,   c'PyTuple_ClearFreeList
+    ,   p'PyTuple_ClearFreeList
     ) where
 
 import Bindings.Python.Raw.Python.Types
@@ -62,3 +68,9 @@ import Bindings.Python.Raw.Python.Types
 #ccall PyTuple_GetSlice, Ptr <PyObject> -> <Py_ssize_t> -> <Py_ssize_t> -> IO (Ptr <PyObject>)
 
 #ccall PyTuple_SetItem, Ptr <PyObject> -> <Py_ssize_t> -> Ptr <PyObject> -> IO <int>
+
+#ccall PyTuple_SET_ITEM, Ptr <PyObject> -> <Py_ssize_t> -> Ptr <PyObject> -> IO <int>
+
+#ccall PyTuple_Resize, Ptr (Ptr <PyObject>) -> <Py_ssize_t> -> Ptr <int>
+
+#ccall PyTuple_ClearFreeList, IO <int>
