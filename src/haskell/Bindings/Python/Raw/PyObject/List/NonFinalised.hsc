@@ -46,7 +46,9 @@ module Bindings.Python.Raw.PyObject.List.NonFinalised
 import Bindings.Python.Raw.Types
 
 #strict_import
-import Data.Bits
+
+import Prelude ( IO )
+import Data.Bool ( Bool )
 
 -- | Return True if the PythonObj is a list object or an instance of a subtype of the list type
 --

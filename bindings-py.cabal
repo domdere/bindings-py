@@ -40,6 +40,8 @@ library
 
     include-dirs:       src/c/include
 
+    default-extensions: NoImplicitPrelude
+
     exposed-modules:    Bindings.Python.Raw
 
     other-modules:      Bindings.Python.Raw.Buffer.NonFinalised

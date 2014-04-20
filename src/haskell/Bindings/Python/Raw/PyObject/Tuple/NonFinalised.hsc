@@ -47,6 +47,8 @@ import Bindings.Python.Raw.Types
 
 #strict_import
 
+import Prelude ( IO )
+
 #ccall PyTuple_Check, Ptr <PyObject> -> IO <int>
 
 #ccall PyTuple_CheckExact, Ptr <PyObject> -> IO <int>

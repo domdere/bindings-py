@@ -20,4 +20,6 @@ import Bindings.Python.Raw.Types
 
 #strict_import
 
-#ccall Py_Initialize    , IO ()
+import Prelude ( IO )
+
+#ccall Py_Initialize, IO ()

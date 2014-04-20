@@ -22,6 +22,8 @@ import Bindings.Python.Raw.Types
 
 #strict_import
 
+import Prelude ( IO )
+
 #ccall Py_XINCREF, Ptr <PyObject> -> IO ()
 
 #ccall Py_XDECREF, Ptr <PyObject> -> IO ()

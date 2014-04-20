@@ -1,5 +1,4 @@
 {-# LANGUAGE ForeignFunctionInterface #-}
--- #include "bindings.h"
 #include <bindings.h>
 
 -----------------------------------------------------------------
@@ -16,8 +15,21 @@
 -----------------------------------------------------------------
 module Bindings.Python.Raw.Buffer.NonFinalised where
 
+import Bindings.Python.Raw.Buffer.Types
 import Bindings.Python.Raw.Types
 
 #strict_import
 
+import Prelude ( IO )
 
+#ccall PyObject_CheckBuffer, Ptr <Py_ssize_t> -> IO CInt
+
+#ccall PyObject_GetBuffer, Ptr <Py_ssize_t> -> Ptr <Py_buffer> -> CInt -> IO CInt
+
+#ccall PyBuffer_Release, Ptr <Py_buffer> -> IO ()
+
+#ccall PyBuffer_SizeFromFormat, CString -> IO <Py_ssize_t>
+
+#ccall PyBuffer_IsContiguous, Ptr <Py_buffer> -> CChar -> IO CInt
+
+#ccall PyBuffer
