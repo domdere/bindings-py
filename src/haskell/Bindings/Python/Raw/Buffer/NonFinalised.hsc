@@ -32,4 +32,6 @@ import Prelude ( IO )
 
 #ccall PyBuffer_IsContiguous, Ptr <Py_buffer> -> CChar -> IO CInt
 
-#ccall PyBuffer
+#ccall PyBuffer_FillContiguousStrides, CInt -> Ptr <Py_ssize_t> -> Ptr <Py_ssize_t> -> <Py_ssize_t> -> CChar -> IO ()
+
+#ccall PyBuffer_FillInfo, Ptr <Py_buffer> -> Ptr <PyObject> -> Ptr () -> <Py_size_t> -> CInt -> CInt -> IO CInt
